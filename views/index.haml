@@ -1,0 +1,16 @@
+!!!html5
+%html
+  %head
+    %meta{:charset => "UTF-8"}
+    %title SVG to PNG
+  %body
+    %h1 SVG to PNG
+    %form{:action => "./result", :method => "post", :enctype => "multipart/form-data"}
+      %ul
+        %li
+          %input{:type => "file", :name => "file"}
+        %li
+          %input{:type => "number", :name => "width", :value => "500"}
+        %li
+          %input{:type => "number", :name => "height", :value => "500"}
+      %input{:type => "submit", :name => "submit"}
